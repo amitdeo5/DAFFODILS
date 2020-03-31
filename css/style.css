@@ -14,7 +14,7 @@ div {
 
 div .items {
     max-width: 1200px;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     position: relative;
     margin: 0 auto;
     height: 80px;
@@ -23,6 +23,16 @@ div .items {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.new {
+    color: goldenrod;
+    font-size: 10px;
+    top: -1px;
+    font-weight: 600;
+    position: absolute;
+    right: -24px;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -99,6 +109,64 @@ nav{
     font-weight: 700;
     color: #3d4152;
     float: left;
+}
+
+.nav-items {
+    flex: 1;
+    min-width: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    height: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.help,.offers,.aboutus{
+    padding-left: 48px;
+    align-items: center;
+    color: black;
+    
+}
+
+.help:hover,
+.offers:hover,
+.aboutus {
+    color:green;
+}
+
+
+.list-item {
+    margin-right: 60px;
+    color: #3d4152;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 0;
+    box-sizing: border-box;
+
+}
+
+.item1 {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 
