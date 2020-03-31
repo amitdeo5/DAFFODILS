@@ -18,7 +18,7 @@ div .items {
     position: relative;
     margin: 0 auto;
     height: 80px;
-    background: #fff;
+    /* background: #fff; */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -43,13 +43,13 @@ div .items {
 }
 
 .header {
-    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.25);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    background: #fff;
+    background: rgb(242, 252, 241);
     z-index: 1000;
     will-change: transform;
     transform: translateZ(0);
