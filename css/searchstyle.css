@@ -1,0 +1,32 @@
+
+.row {
+    margin-right: -20px;
+}
+
+.test {
+    background-color: grey ;
+}
+.plant {
+    background-color: hotpink;
+    display: block;
+    box-sizing: border-box;
+    padding-right: 20px;
+    
+    
+}
+
+
+
+
+.green-house {
+    background-color: indianred;
+    display: block;
+    box-sizing: border-box;
+    
+}
+.container {
+    padding-top: 130px;
+    display: block;
+    box-sizing: border-box;
+    
+}
