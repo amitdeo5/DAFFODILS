@@ -25,7 +25,7 @@ div .items {
     align-items: center;
 }
 
-.new {
+/*.new {
     color: goldenrod;
     font-size: 10px;
     top: -1px;
@@ -34,6 +34,7 @@ div .items {
     right: -24px;
     text-transform: uppercase;
 }
+*/
 
 .logo {
     display: block;
@@ -139,10 +140,25 @@ a:hover {
     
 }
 
+.offers {
+    position: relative;
+    display: block;
+}
+
+.off-icon {
+    position: absolute;
+    left: 10px;
+}
+
 .help:hover,
 .offers:hover,
 .aboutus {
     color:green;
+    
+}
+
+@media only screen and (max-width: 680px) {
+    .aboutus { visibility: hidden;}
 }
 
 
