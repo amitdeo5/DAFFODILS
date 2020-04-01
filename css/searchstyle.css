@@ -1,7 +1,7 @@
 body {
-    background-image: url("images/back.jpg");
-    /* background-image: linear-gradient(to bottom, rgba(144,238,144,1),rgba(144,238,144,.4), rgba(144,238,144,0));  */
-    background-repeat: no-repeat; 
+    
+    background-image: linear-gradient(to bottom, rgba(144,238,144,1),rgba(144,238,144,.5), rgba(144,238,144,0)); 
+    
 }
 
 .row {
@@ -14,17 +14,23 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     
-        height: 200px;
+        height: auto;
+        /* background-image: url("images/back.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; */
         /* background-image: linear-gradient(to bottom, rgba(144,238,144,1),rgba(144,238,144,.5) , rgba(144,238,144,0));  */
       
    
 }
 .plant {
     /* background-image: linear-gradient(to right , rgb(255, 255, 255), rgb(238, 180, 180, 0.589)); */
-    background-color: rgba(137, 214, 137, 0.5); 
+    background-color: #90c3ca80; 
     display: block;
     box-sizing: border-box;
-    border-top-left-radius: 15px;    
+    border-top-left-radius: 15px; 
+    border: 3px solid #ffffff;  
+    border-right: none;
+    border-bottom: none;
 }
 
 .green-house img,
@@ -32,26 +38,45 @@ body {
     display: block;
    
     max-width: 100%;
-    padding: 4%;
+    padding: 0;
     transition: all 1s;
 
+/* }
+.green-house img,
+.plant img { */
+    border: 2px solid black;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    
+}
+
+.capimg {
+    position: relative;
 }
 
 
 .plant img:hover,
-.green-house img:hover {
-    transform: scale(1.1);
+.green-house img:hover
+.caption:hover img {
+    /* transform: scale(0.7); */
     translate: 20px;
+    opacity: 0.4;
 }
+
+
+
 
 .green-house {
      background-color: rgb(255, 255, 255);     
     display: block;
     /* background-image: linear-gradient(to right , rgba(238, 180, 180, 0.589), rgb(255, 255, 255));     */
-    border-right: blue;
     border-top-right-radius: 15px;
     
     box-sizing: border-box;
+    border: 3px solid #90c3ca80;
+    border-left: none;
+    border-bottom: none;
     
     
 }
@@ -60,4 +85,41 @@ body {
     display: block;
     box-sizing: border-box;
     
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 100%;
+    color: white; 
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30%;
+    opacity: 0;
+    transition: all 1s;
+    margin-top: 1px;
+    
+
+}
+
+.green-house img:hover + .caption,
+.plant img:hover + .caption,
+.caption:hover{
+    background-color: black;
+    opacity: 1;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+  
+.imghead {
+    font-size: large;
+    text-align: center; 
+    color: green;
+    background-color: white;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
