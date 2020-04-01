@@ -112,9 +112,16 @@ nav{
     float: left;
 }
 
+
+@media only screen and (max-width: 480px) {
+    .location-area{ font-size: small;}
+    
+}
+
+
 .nav-items {
     flex: 1;
-    min-width: 0;
+    /* min-width: 0; */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
@@ -141,7 +148,7 @@ a:hover {
 }
 
 .offers {
-    position: relative;
+    position
     display: block;
 }
 
@@ -159,6 +166,12 @@ a:hover {
 
 @media only screen and (max-width: 680px) {
     .aboutus { visibility: hidden;}
+}
+
+@media only screen and (max-width: 480px) {
+    .offers, .help{ font-size: small;
+    padding-left: 20px;}
+    .off-icon{visibility: hidden;}
 }
 
 
