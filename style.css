@@ -5,12 +5,18 @@ html, body{
  margin: 0px;
 }
 
+.display-1{
+  text-align: inherit;
+  text-shadow: rgb(20, 147, 35);
+  
+  }
 
 #banner {
     background-color: #f7f7f7;
     width: 100%;
     height: 60%;
     text-align: center;
+    text-shadow: rgba(9, 247, 84, 0.24);
     } 
 
     .button {
@@ -46,6 +52,8 @@ html, body{
 .left {
   float: right;
   margin-top: 0px;
+  text-align: inherit;
+  text-shadow: rgb(20, 147, 35);
 }
 
 .abc{
@@ -130,6 +138,7 @@ slide p {
 
 .footer{
   background-image: url(images/img3.jpg);
+  margin-bottom: 0px;
 }
 
 
@@ -198,4 +207,27 @@ slide p {
    }
  }
  
+ @media screen and (max-width: 900px) {
+   
+  .banner {
+    background-color: #e1fcc3;
+    width: 100%;
+    height: 60%;
+    text-align: center;
 
+  }
+
+  .html,body{
+    height: auto;
+   }
+
+  .right {
+    display: none;
+  }
+
+  .abc {
+    display: none;
+  }
+  
+  
+}
