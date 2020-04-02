@@ -1,27 +1,41 @@
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 20px 0;
+    position: relative;
+    bottom: 100px;
+    
+    padding: 10px 5px;
+}
+
+.footer-links {
+    margin-left: 50px;
 }
 
 section .section-title {
     text-align: center;
     color: #007b5e;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e !important;
+   /* background: black !important;  */
+    /* background-image: url("images/img3.jpg"); */
+}
+.footerab {
+    /* background: palevioletred; */
+    position: relative;
+    bottom: 0px;
+    background-image: url("../images/footerimg.jpg");
 }
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#ffffff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color:black;
 }
 #footer a {
-    color: #ffffff;
+    color: black;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -42,10 +56,29 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color: rgb(5, 17, 9);
 }
-#footer ul.social li a:hover{
-	color:#eeeeee;
+/* #footer ul.social li a:hover{
+	color: #007b5e;
+} */
+.fa-instagram:hover {
+    color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.fa-youtube-play:hover {
+    color: #FF0000;
+}
+.fa-envelope:hover {
+    color: rgb(0, 183, 255);
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
@@ -73,3 +106,13 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+
+.covertrans {
+    background-color: rgba(0,0,0,.2);
+     height: 60px;
+     width: 100%;
+     position: absolute;
+     bottom: 90px;
+     z-index: 100;
+}
+
