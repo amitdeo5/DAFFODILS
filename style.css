@@ -5,15 +5,12 @@ html, body{
  margin: 0px;
 }
 
-.display-1{
-  text-align: inherit;
-  text-shadow: rgb(20, 147, 35);
-  
-  }
+
 
 #banner {
+    float: right;
     background-color: #f7f7f7;
-    width: 100%;
+    width: 65%;
     height: 60%;
     text-align: center;
     text-shadow: rgba(9, 247, 84, 0.24);
@@ -65,6 +62,7 @@ margin-left: 0px;
 float: right;
 width: 62%;
 height: 44.5%;
+box-sizing: border-box;
 }
 
 
@@ -141,6 +139,10 @@ slide p {
   margin-bottom: 0px;
 }
 
+.content{
+  text-align: center;
+}
+
 
 .middle{
   position: relative;
@@ -207,19 +209,16 @@ slide p {
    }
  }
  
+
+
+
  @media screen and (max-width: 900px) {
-   
-  .banner {
-    background-color: #e1fcc3;
+
+  #banner{
     width: 100%;
-    height: 60%;
-    text-align: center;
-
   }
-
-  .html,body{
-    height: auto;
-   }
+  
+  
 
   .right {
     display: none;
@@ -229,5 +228,10 @@ slide p {
     display: none;
   }
   
+  .html,body{
+    height: auto;
+   }
   
 }
+
+
