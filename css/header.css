@@ -38,9 +38,15 @@ div .items {
 
 .logo {
     display: block;
-    height: 60px;
+    height: 120px;
+    width: auto;
     transition: transform .3s cubic-bezier(.215,.61,.355,1);
 }
+
+@media only screen and (max-width: 680px) {
+    .logo { height: 80px;
+    padding-left: 0px;
+padding-right: 2px;}
 
 .header {
     box-shadow: 0 15px 40px -20px rgba(40,44,63,.25);
@@ -48,7 +54,7 @@ div .items {
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 100px;
     /* background: rgb(242, 252, 241); */
     background-color:white;
     z-index: 1000;
@@ -149,7 +155,7 @@ a:hover {
 }
 
 .offers {
-    position
+    
     display: block;
 }
 
@@ -164,17 +170,29 @@ a:hover {
     color:green;
     
 }
+.aboutus {
+    font-size: larger;
+    font-weight: bold;
+}
+@media only screen and (max-width: 680px) {
+    .aboutus { font-size: small;
+                padding-left: 4px;
+                padding-right: 0px;}
+       }
 
-/* @media only screen and (max-width: 680px) {
-    .aboutus { visibility: hidden;}
-} */
 
 @media only screen and (max-width: 480px) {
     .offers, .help{ font-size: small;
     padding-left: 10px;}
+    .offers {padding-left: 7px;}
     .off-icon{visibility: hidden;}
 }
 
+@media only screen and (max-width: 360px) {
+    .aboutus {
+        visibility: hidden;
+    }
+}
 
 .list-item {
     margin-right: 60px;
