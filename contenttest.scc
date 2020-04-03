@@ -1,0 +1,14 @@
+#content_wrapper {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;    
+    z-index: -10;
+}
+#content {
+    background: white;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
