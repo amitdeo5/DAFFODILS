@@ -47,6 +47,7 @@ div .items {
     .logo { height: 80px;
     padding-left: 0px;
 padding-right: 2px;}
+    }
 
 .header {
     box-shadow: 0 15px 40px -20px rgba(40,44,63,.25);
