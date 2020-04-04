@@ -1,6 +1,9 @@
 body {
     /* background-image: linear-gradient(to bottom, rgba(216,112,147,1),rgba(216,112,147,.5), rgba(216,112,147,0));  */
-     background:white;
+     /* background:white; */
+     background-image: url("../images/bgimg3.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
     /* background-image: linear-gradient(to bottom, rgba(144,238,144,1),rgba(144,238,144,.5), rgba(144,238,144,0));  */
     
 }
