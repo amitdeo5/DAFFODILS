@@ -290,8 +290,16 @@ slide p {
    .dropdown-content {
      width: 250px;
    }
-  
-}
+   
+   .button {
+     font-size: 13px;
+   }
+
+   .footerab {
+     margin-bottom: -20px;
+   }
+
+  }
 
 @media screen and (max-width: 300px) {
 
@@ -337,9 +345,10 @@ section .section-title {
 .footerab {
     /* background: palevioletred; */
     position: relative;
-    bottom: 0px;
+    bottom: 10px;
     background-image: url("images/footerimg.jpg");
     margin-right: 0px;
+    margin-bottom: -10px;
 }
 #footer h5{
   margin-top: 9px;
@@ -446,6 +455,7 @@ section .section-title {
 
 @media screen and (max-width: 600px) {
 
+
   .display-1{
     font-size: 30px;
   }
@@ -468,4 +478,6 @@ section .section-title {
     margin-top: 0px;
      bottom: 50px;
     }
+
+    
 }
