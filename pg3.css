@@ -21,19 +21,113 @@
 
 .logo
 {
-    height: 40px;
+    height: 56px;
+    width: 100px;
     margin: 5px;
 }
 
 .form-control{
+    height: 38px;
     margin-top: 9px;
     margin-left: 30px;
-    border: 1px solid green !important;
+    border: 1px solid rgb(5, 134, 5) ;
     border-top-left-radius:20px !important ;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius:0 !important ;
-    border-bottom-right-radius: 0 !important ;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius:0px !important ;
+    border-bottom-right-radius: 0px !important ;
     box-shadow: none !important;
 }
 
-.
+.input-group-text{
+    background-color: green;
+    margin-top: 9px;
+    height: 38px;
+    background: green;
+    border-color: green;
+    border: 1px solid green ;
+    border-top-left-radius:0px !important ;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius:20px !important ;
+    border-bottom-right-radius: 20px !important ;
+    cursor: pointer;
+}
+
+.search-box{
+display: inline-flex;
+width: 60%;
+
+}
+
+.fa-search{
+    color: white;
+}
+
+.menu-bar{
+width: 40%;
+height: 57px;
+float: right;
+
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li {
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: green;
+    cursor: pointer;
+}
+
+.menu-bar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration:none;
+
+}
+ 
+.fa-shopping-basket{
+   margin-right: 5px; 
+}
+
+.fa-gift{
+    margin-right: 5px;
+}
+
+.fa-question{
+   margin-right: 5px;
+}
+
+.fa-heart{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+ .top-nav-bar{
+     height: 118px;
+     border-bottom: 0;
+ }
+
+ .search-box{
+     width: 100%;
+ }
+
+ .menu-bar{
+     width: 100%;
+ }
+
+ .menu-bar ul {
+     width: 100%;
+ }
+
+ .menu-bar ul li {
+     width: 100%;
+ }
+
+}
