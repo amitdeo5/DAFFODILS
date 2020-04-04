@@ -116,3 +116,6 @@ section .section-title {
      z-index: 100;
 }
 
+a {
+    color:inherit;
+}
