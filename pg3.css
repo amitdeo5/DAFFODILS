@@ -372,14 +372,14 @@ margin-top: 22px;
 
 .featured-categories
 {
-    margin: 50px 0;
+    margin: 30px 0;
 
 }
 
 .featured-categories img
 {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     transition: 1s;
     cursor: pointer;
 }
@@ -395,7 +395,7 @@ margin-top: 22px;
  .title-box{
      background: green;
      color: #fff;
-     width: 180px;
+     width: 280px;
      padding: 4px 10px;
      height: 40px;
      margin-bottom: 30px;
@@ -410,11 +410,11 @@ margin-top: 22px;
  {
      content: '';
      border-top: 40px solid green;
-     border-right: 50px solid transparent;
+     border-right: 180px solid transparent;
      position: absolute;
      display: flex;
      margin-top: -4px;
-     margin-left: 170px;
+     margin-left: 270px;
  }
 
  /*-----product-top css---------*/
