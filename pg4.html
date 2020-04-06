@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>checkout page</title>
+<link rel="stylesheet" href="pg3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+    margin-left: 100px;
+    width: 60%;
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+
+  
+  border: 4px solid rgb(24, 163, 5);
+ 
+   
+
+
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+ 
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+    color: green;
+    background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  margin-left: 40px;
+  width: 91%;
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+/* border*/
+
+
+.title{
+     background: green;
+     color: #fff;
+     width: 210px;
+     padding: 4px 10px;
+     height: 40px;
+     margin-bottom: 30px;
+     display: flex;
+ }
+
+ .title h2 {
+     margin-top: 0px;
+     font-size: 24px;
+     margin-left: 29px;
+ }
+
+ .title::after 
+ {
+     content: '';
+     border-top: 40px solid green;
+     border-right: 130px solid transparent;
+     position: absolute;
+     display: flex;
+     margin-top: -4px;
+     margin-left: 200px;
+ }
+
+ .tc{
+     font-size: 15px;
+     margin-left: -25px;
+
+ }
+
+
+
+
+ * {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container1 {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=submit1] {
+  width: 60%;
+  padding: 15px;
+  margin-left: 50px;
+  margin: 5px 10 2px 5;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+input[type=radio] {
+    margin-left: -50px;
+}
+
+.abc{
+ margin-left: 15px;
+}
+
+.type{
+    margin-right: 10px;
+    width: 20%;
+    float: right;
+    margin-top: -30%;
+}
+
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-left: -8px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+    <!-----nav bar------->
+    
+<div class="top-nav-bar">
+<a href="home.html" target="_self"><img src="images/logonew.png" class="logo"></a>
+</div>
+
+
+
+<!-----login---->
+
+<div class="title">
+    <h2>  1.  Sign Up</h2>
+    </div> 
+
+<div class="container">
+
+    
+
+    
+
+    <form action="/action_page.php">
+      <div class="row">
+        <h2 style="text-align:center">Sign up with Social Media or Manually</h2>
+        <div class="vl">
+          <span class="vl-innertext">or</span>
+        </div>
+  
+        <div class="col">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+           </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+          </a>
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Login with Google+
+          </a>
+        </div>
+  
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or sign in manually:</p>
+          </div>
+  
+          <input type="text" name="username" placeholder="First Name" required>
+          <input type="text" name="username" placeholder="Last Name" required>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <p class="tc">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <input type="submit" value="Login">
+        </div>
+        
+      </div>
+    </form>
+  
+  <br>
+ 
+
+</div>
+
+<br><br>
+  <div class="title">
+    <h2>  2. Details  </h2>
+    </div> 
+
+
+   
+    <form action="/action_page.php">
+        <div class="container">
+            <h2 style="text-align:center">Add Delivery Details</h2>
+          <p>Please fill delivery address</p>
+          <hr>
+      
+       
+          <input type="text" name="username" placeholder="*Recipient's Address" required>
+          <input type="text" name="username" placeholder="Landmark" required>
+          <input type="text" name="username" placeholder="*pin code" required>
+          <input type="text" name="username" placeholder="*city" required>
+          
+          <input type="text" name="username" placeholder="*Recipient's mobile number" required>  
+          <input type="text" name="username" placeholder="Recipient's alt. mobile number" required>
+      
+         <div class="type">
+          <fieldset>
+                  <legend>Address type? </legend>
+      
+                  <input type="radio" id="male" name="gender" value="male"><label for="male"><p class="abc">Home</p></label><br>
+                  <input type="radio" id="female" name="gender" value="female"><label for="female"><p class="abc">Office</p></label><br>
+                  <input type="radio" id="other" name="gender" value="other"><label for="other"><p class="abc">Other</p></label>
+          
+         </fieldset>
+
+         </div>
+      
+          <hr>
+          <center><p>By continuing you agree to our <a href="#">terms & conditions</a>.</p>
+      
+          <button type="submit" class="registerbtn">SAVE & DELIVER HERE</button>
+
+        </center>
+
+        </div>
+        
+        
+      </form>
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>
