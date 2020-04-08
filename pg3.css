@@ -194,7 +194,7 @@ float: right;
 }
 
 
-#mySidenav a {
+#mySidenav a1 {
 
     height: 79%;
 width: 15%;
@@ -216,7 +216,7 @@ margin-top: 22px;
   
 }
 
-#mySidenav a:hover {
+#mySidenav a1:hover {
   left: 0;
 }
 
