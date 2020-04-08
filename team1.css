@@ -118,6 +118,20 @@ body{
 	box-shadow: 0 0 10px #000;
 }
 
+
+
+
+.logo{
+	width: 10%;
+	height: 54px;
+}
+
+
+
+
+
+
+
 /*responsive*/
 @media(max-width: 991px){
 	.team-section .team-items .item{
@@ -125,6 +139,13 @@ body{
        max-width: calc(50% - 30px);
 
    }
+
+   
+   .logo{
+	width: 30%;
+	height: 54px;
+}
+
 }
 
 @media(max-width: 767px){
@@ -133,14 +154,11 @@ body{
        max-width: calc(100%);
 
    }
+
+
+
+
 }
-
-
-
-
-
-
-
 
 
 
