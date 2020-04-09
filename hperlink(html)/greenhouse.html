@@ -12,6 +12,69 @@
         <link rel="stylesheet" href="slide.css">
 
         
+
+<style>
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+    </style>
+
+
     </head>
 
     <body>
@@ -34,9 +97,16 @@
             
             <div class="menu-bar">
               <ul>
-                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i>wishlist</a> </li>
-               <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>cart</a> </li>
-               <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i>offers</a> </li>
+                <li>
+                    <a onclick="myFunction1()">
+                    <i class="fa fa-heart" aria-hidden="true"></i>wishlist</a> </li>
+                    </a>
+                 <li>    
+                    <a onclick="myFunction2()">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>cart</a> </li>
+                    </a>
+               <li><a href="offers.html"><i class="fa fa-gift" aria-hidden="true"></i>offers</a> </li>
+               
               </ul>  
             </div>
             </div>
@@ -97,15 +167,21 @@
                     <div class="product-top">
                         <img src="images/hightunnel (1).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -124,15 +200,21 @@
                     <div class="product-top">
                         <img src="images/hightunnel (2).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -237,15 +319,21 @@
                     <div class="product-top">
                         <img src="images/shade (1).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -264,15 +352,21 @@
                     <div class="product-top">
                         <img src="images/shade (2).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -380,15 +474,21 @@
                     <div class="product-top">
                         <img src="images/rolling (1).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -407,15 +507,21 @@
                     <div class="product-top">
                         <img src="images/rolling (2).jpg"> 
                         <div class="overlay-right">
-                            <button type="button" class="btn btn-secondry" title="Buy now">
-                                <i class="fa fa-inr" aria-hidden="true"></i>
+                           <button type="button" class="btn btn-secondry" title="Buy now">
+                                <a href="pg4(checkout).html"><i class="fa fa-inr" aria-hidden="true"></i> </a>
                             </button>  
                             <button type="button" class="btn btn-secondry" title="Add to wishlist">
-                                <i class="fa fa-heart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-heart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
+                                  
                             </button>   
                             <button type="button" class="btn btn-secondry" title="Add to cart">
-                                <i class="fa fa-shopping-cart">   </i>
+                                <div class="popup" onclick="myFunction()"> <i class="fa fa-shopping-cart"></i>
+                                    <span class="popuptext" id="myPopup">Added !</span>
+                                  </div>
                             </button>   
+                              
                         </div>
                     </div>
                         <div class="product-bottom text-center">
@@ -616,7 +722,26 @@
 
 </footer>
 <!--------------------------------- Footer -------------------------------->
+<script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
 
+
+    function myFunction1() {
+  alert("Your wishlist is empty");
+}
+
+function myFunction2() {
+  alert("Your cart is empty");
+}
+
+
+
+
+    </script>
 
 
 
