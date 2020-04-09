@@ -1,20 +1,23 @@
 .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -0%);
+    /* top: 50%; */
+    /* left: 50%; */
+    /* bottom: 1px; */
+    transform: translate(0%, -0%);
     height: auto;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     line-height: 20px;
-    color: #000000;
+    color: #035a2a;
     width: 100%;
+    z-index: 100000;
+    background-color: transparent;
 }
 .content__container {
     font-weight: 300;
     overflow: hidden;
-    height: 30px;
+    height: 40px;
     padding: 0px 30px;
 }
 .content__container:before {
@@ -41,7 +44,7 @@
 }
 .content__container__text {
     display: inline;
-    float: left;
+    /* float: left; */
     margin: 0;
 }
 .content__container__list {
