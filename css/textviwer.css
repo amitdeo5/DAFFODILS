@@ -13,6 +13,8 @@
     width: 100%;
     z-index: 100000;
     background-color: transparent;
+    margin-top: -70px;
+    margin-left: 25px;
 }
 .content__container {
     font-weight: 300;
@@ -174,4 +176,21 @@
     83.3%, 95.96% {
         transform: translate3d(0, -25%, 0);
    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+.content {
+    font-size: 9px;
+
+    margin-top: 70px;
+    margin-left: -45px;
+}
+
+
+
+
+
 }
